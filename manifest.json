@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Smogon tier display",
-  "description": "This extension will display current playing ladder elo",
+  "name": "Showdown battle info display",
+  "description": "This extension will display ongoing game ladder and elo for this ladder",
   "version": "1.0",
 
   "browser_action": {
