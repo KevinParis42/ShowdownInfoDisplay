@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Smogon tier display",
+  "description": "This extension will display current playing ladder elo",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "src/popup.html"
+  },
+  "background": {
+    "scripts": ["src/bg_page.js"],
+    "persistent": false
+  },
+  "permissions": ["activeTab", "https://pokemonshowdown.com/users/*"],
+  "content_scripts": [{
+    "matches": [
+      "https://play.pokemonshowdown.com/*"
+    ],
+    "js": ["src/popup.js"]
+  }]
+}
