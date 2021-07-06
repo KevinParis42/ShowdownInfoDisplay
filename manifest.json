@@ -13,7 +13,7 @@
     "scripts": ["src/bg_page.js"],
     "persistent": false
   },
-  "permissions": ["activeTab", "https://pokemonshowdown.com/users/*"],
+  "permissions": [ "*://pokemonshowdown.com/users/*", "*//play.pokemonshowdown.com/*" ],
   "content_scripts": [{
     "matches": [
       "https://play.pokemonshowdown.com/*"

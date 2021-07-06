@@ -28,7 +28,6 @@ const getLadderName = () => {
 
 const getLadderRank = () => {
 	const username = getUserName()
-	console.log(username)
 	if (username) {
 		chrome.runtime.sendMessage( //goes to bg_page.js
 			`https://pokemonshowdown.com/users/${username}`,
@@ -48,7 +47,6 @@ const getLadderRank = () => {
 setInterval(() => {
 	const customElem = document.getElementById("showdownLadderInfos")
 	if (customElem === null && window.location.href !== "https://play.pokemonshowdown.com/") {
-		console.log("I'm in a battle")
 		getLadderRank()
 	}
-}, 1500)
+}, 2000)
